@@ -1,0 +1,10 @@
+.card_full{
+    background: rgb(30,90,244);
+    background: linear-gradient(45deg, rgba(30,90,244,1) 0%, rgba(0,96,248,1) 49%, rgba(53,177,252,1) 100%);
+    border-radius: 10px;
+}
+
+hr{
+    background-color: white;
+    margin-inline: 5rem;
+}
