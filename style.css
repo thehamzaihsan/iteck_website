@@ -1,3 +1,4 @@
+
 .card_full{
     background: rgb(30,90,244);
     background: linear-gradient(45deg, rgba(30,90,244,1) 0%, rgba(0,96,248,1) 49%, rgba(53,177,252,1) 100%);
@@ -7,4 +8,39 @@
 hr{
     background-color: white;
     margin-inline: 5rem;
+}
+
+.section-03 .sub_heading{
+    color: rgb(30,90,244);
+}
+
+.card-collection .card{
+    border-radius: 10px;
+}
+
+.card-collection .card-img{
+    width: 70px;
+    height: inherit;
+}
+
+.card-collection .tag{
+    background-color: #EEF4F8;
+    color: gray;
+    
+}
+
+.card-collection .card-no{
+    color: rgb(30,90,244);
+    text-align: end;
+
+}
+
+
+.card-collection .card:hover{
+    box-shadow: 0px 0px 20px rgb(171, 171, 171); 
+    
+}
+
+.card-collection .card:hover .card-title{
+    color:  rgb(30,90,244);
 }
