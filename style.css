@@ -1,4 +1,29 @@
 
+.gg-phone {
+    filter: invert(50%); 
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    transform: scale(var(--ggs,1))
+}
+
+.call_icon{
+    background: rgb(0,89,245);
+    background: linear-gradient(90deg, rgba(0,89,245,1) 0%, rgba(33,156,252,1) 70%);
+    border-radius: 50pc;
+}
+
+   
+.button_1{
+    background-color: #212529;
+}
+
+.button_1:hover{
+    background-color: #212529;
+}
+
 .card_full{
     background: rgb(30,90,244);
     background: linear-gradient(45deg, rgba(30,90,244,1) 0%, rgba(0,96,248,1) 49%, rgba(53,177,252,1) 100%);
@@ -10,7 +35,16 @@ hr{
     margin-inline: 5rem;
 }
 
-.section-03 .sub_heading{
+.section-02 , .section-03{
+    background-image: url(./img/images/ser_shap_l-323x1024.png);
+    background-repeat:no-repeat;
+
+}
+
+.section-03{
+    background-position: right TOP;
+}
+ .sub_heading{
     color: rgb(30,90,244);
 }
 
@@ -35,6 +69,17 @@ hr{
 
 }
 
+.dropdown-menu{
+    box-shadow: 0px 0px 10px rgb(171, 171, 171);  
+    border-radius: 10px;
+    border: #EEF4F8;
+}
+
+.vl {
+    border-left: 1px solid gray;
+    height: 50px;
+    opacity: 0.5;
+  }
 
 .card-collection .card:hover{
     box-shadow: 0px 0px 20px rgb(171, 171, 171); 
@@ -44,3 +89,21 @@ hr{
 .card-collection .card:hover .card-title{
     color:  rgb(30,90,244);
 }
+
+.nav-link.text-black.dropdown-toggle.show {
+    text-decoration: underline rgb(30,90,244) 2px  !important;
+}
+
+.btn-primary{
+    background: rgb(30,90,244);
+    background: linear-gradient(90deg, rgba(30,90,244,1) 0%, rgba(0,96,248,1) 49%, rgba(53,177,252,1) 100%);
+}
+
+.btn-primary:hover{
+    background: rgb(30,90,244);
+    background: linear-gradient(-90deg, rgba(30,90,244,1) 0%, rgba(0,96,248,1) 49%, rgba(53,177,252,1) 100%);
+}
+.list li{
+    list-style:none;
+}
+
