@@ -102,8 +102,15 @@ body{
 
 .card_full{
     background: var(--background-color);
-    background: var(--main-gradient);
-    border-radius: 10px;
+    background: url(./img/images/ser_shap_l-1024.png), var(--main-gradient) ;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-size: 100% ,  100%;
+    border-radius: 10px;    
+    background-position: 136px 10px , 0px;
+    background-blend-mode:color-burn , normal ;
+
+  
 }
 
 hr{
