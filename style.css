@@ -230,8 +230,8 @@ hr{
 
 @media  (max-width:600px) {
     .carousel-01 , .section-01{
-        background-image: url(./img/images/shap_l\ 2.png);
-        background-position: top right ;
+        background-image: url(./img/images/shap_l.png);
+        background-position: bottom left ;
     }
 }
 
