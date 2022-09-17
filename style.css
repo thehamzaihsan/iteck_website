@@ -213,7 +213,7 @@ hr{
     background: url(./img/images/contact_globe.svg) , linear-gradient(90deg, rgba(0,89,245,1) 0%, rgba(33,156,252,1) 70%) ;
     background-size: cover;
     background-repeat: no-repeat ;
-    background-size: 30pc , 100pc;
+    background-size: 30pc ,  100%;
     background-position: -133px -94px , 0px;
 
     
