@@ -14,7 +14,7 @@
 
 }
 body{
-    overflow-x: visible;
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -225,9 +225,16 @@ hr{
     background-image:url(./img/images/shap_l.png) ,url(./img/images/shap_l\ 2.png);
     background-repeat: no-repeat , no-repeat;
     background-position: bottom left , top right;
-
-    
+  
 }
+
+@media  (max-width:600px) {
+    .carousel-01 , .section-01{
+        background-image: url(./img/images/shap_l\ 2.png);
+        background-position: top right ;
+    }
+}
+
 .card-img-top{
     object-fit: cover;
     width: inherit;
@@ -290,7 +297,7 @@ hr{
 .blog-content {
     position: absolute;
     width: 100%;
-    bottom: -144px;
+    bottom: 0px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -298,20 +305,34 @@ hr{
     position: relative;
     border-radius: 30px;
     overflow: hidden;
-}
-
-.blog-box:hover .blog-content{
-    bottom:0px;
-    transition: all 0.5s ease-in-out;
-    filter: blur(0px);
-}
-
-.blog-box:hover .blog-img{
-    scale: 1.4;
-    transform: rotate(-15deg);
-    transition: all 0.5s ease-in-out;
 
 }
+
+
+
+@media (hover:hover) {
+
+    .blog-content {
+        position: absolute;
+        width: 100%;
+        bottom: -144px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .blog-box:hover .blog-content{
+        bottom:0px;
+        transition: all 0.5s ease-in-out;
+        filter: blur(0px);
+    }
+    .blog-box:hover .blog-img{
+        scale: 1.4;
+        transform: rotate(-15deg);
+        transition: all 0.5s ease-in-out;
+    
+    }
+}
+
+
 
 .blog-tag{
     position:absolute;
@@ -337,14 +358,14 @@ hr{
 .blog-title{
     position: absolute;
     bottom: 200px;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 10px black;
 }
 
 .author-name{
     position: absolute;
     bottom: 151px;
     left: 67px;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 10px black;
 }
 
 .blog-box .vl{
@@ -353,7 +374,7 @@ hr{
     left: 132px;
     height: 40px;
     border-left: 1px solid white;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 10px black;
 }
 
 .blog-box .fa-calendar{
@@ -361,21 +382,21 @@ hr{
     bottom: 171px;
     left: 166px;
     color: white;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 10px black;
 }
 
 .blog-box .blog-date{
     position: absolute;
     bottom: 151px;
     left: 197px;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 10px black;
 }
 
 .blog-box .preview-content{
     position: absolute;
     bottom: -9px;
     left: 10px;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 10px black;
 }
 
 

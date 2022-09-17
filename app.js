@@ -12,14 +12,16 @@ $('.owl-one').owlCarousel({
     responsive: {
         0: {
             items: 1,
-            margin:30,
-            center: true,
+           
+            
         },
         770: {
-            items: 2
+            items: 2,
+            
         },
         1000: {
-            items: 3
+            items: 3,
+            center:false
         }
     }
 })
@@ -49,11 +51,11 @@ $('.owl-two').owlCarousel({
     responsive: {
         0: {
             items: 1,
-            center:true,
+            
         },
         770: {
             items: 2,
-            margin:30,
+            
         },
         1200: {
             items: 3
