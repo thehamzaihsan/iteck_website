@@ -1,6 +1,6 @@
 $('.owl-one').owlCarousel({
     loop: true,
-    margin: 30,
+    margin: 10,
     autoplay: false,
     autoplayTimeout: 2000,
     autoplayHoverPause: false,
@@ -12,7 +12,7 @@ $('.owl-one').owlCarousel({
     responsive: {
         0: {
             items: 1,
-           
+            
             
         },
         770: {
@@ -21,7 +21,7 @@ $('.owl-one').owlCarousel({
         },
         1000: {
             items: 3,
-            center:false
+
         }
     }
 })
@@ -38,7 +38,7 @@ else if(eventObject.which==39) {//right arrow
 
 $('.owl-two').owlCarousel({
     loop: true,
-    margin: 30,
+    margin: 10,
     autoplay: false,
     autoplayTimeout: 2000,
     autoplayHoverPause: false,
@@ -51,6 +51,7 @@ $('.owl-two').owlCarousel({
     responsive: {
         0: {
             items: 1,
+            
             
         },
         770: {
