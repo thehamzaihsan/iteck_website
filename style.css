@@ -195,7 +195,7 @@ hr{
     left: -120px;
     z-index: -1;
     animation: shakeY 20s infinite ;
-    animation-delay: 0.9s;
+    animation-delay: 2s;
 }
 
 .choose-lines-img{

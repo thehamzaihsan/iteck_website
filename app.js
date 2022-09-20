@@ -5,6 +5,7 @@ $('.owl-one').owlCarousel({
     autoplayTimeout: 2000,
     autoplayHoverPause: false,
     dots: true,
+    center:false,
     stagePadding: 10,
     responsiveBaseElement: 'body',
     animateOut: 'fadeOut',
@@ -12,7 +13,8 @@ $('.owl-one').owlCarousel({
     responsive: {
         0: {
             items: 1,
-            
+            center:true,
+            margin:20,
             
         },
         770: {
@@ -43,7 +45,7 @@ $('.owl-two').owlCarousel({
     autoplayTimeout: 2000,
     autoplayHoverPause: false,
     dots: false,
-    center:true,
+    center:false,
     stagePadding: 10,
     responsiveBaseElement: 'body',
     animateOut: 'fadeOut',
@@ -51,8 +53,8 @@ $('.owl-two').owlCarousel({
     responsive: {
         0: {
             items: 1,
-            
-            
+            center:true,
+            margin:20,
         },
         770: {
             items: 2,
