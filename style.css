@@ -6,6 +6,7 @@
 :root {
     --background-color: rgb(0,89,245);
     --main-gradient: linear-gradient(90deg, rgba(0,89,245,1) 0%, rgba(33,156,252,1) 70%);
+    --btn-gradient:linear-gradient(90deg, rgba(6,95,250,1) 0%, rgba(2,181,255,1) 48%, rgba(3,19,254,1) 100%);
 }
   
 
@@ -74,12 +75,15 @@ body{
 }
 
 .btn-primary{
-    background: linear-gradient(90deg, rgba(30,90,244,1) 0%, rgba(0,96,248,1) 49%, rgba(53,177,252,1) 100%);
+    background-image: var(--btn-gradient);
+    background-size: 170%;
     border: rgba(255, 255, 255, 0);
+    background-position: left;
+    transition: background-position 0.5s;
 }
 
 .btn-primary:hover{
-    background: linear-gradient(-90deg, rgba(30,90,244,1) 0%, rgba(0,96,248,1) 49%, rgba(53,177,252,1) 100%);   
+   background-position: right;
 }
 
 /***** Section-01 *****/
