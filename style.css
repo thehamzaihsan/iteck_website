@@ -82,7 +82,7 @@ body{
     transition: background-position 0.5s;
 }
 
-.btn-primary:hover{
+.btn-primary:hover,.btn-primary:focus {
    background-position: right;
 }
 
