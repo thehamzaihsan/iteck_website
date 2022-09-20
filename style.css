@@ -78,6 +78,7 @@ body{
     background: linear-gradient(90deg, rgba(30,90,244,1) 0%, rgba(0,96,248,1) 49%, rgba(53,177,252,1) 100%);
     border: white;
 
+
 }
 
 .btn-primary:hover{
@@ -165,6 +166,42 @@ hr{
 }
 
 /***** Section-04 *****/
+
+.image-wrapper{
+    position: relative;
+    
+
+}
+
+.choose-brands-img{
+    position: absolute;
+    left: -120px;
+    z-index: -1;
+    animation: shakeY 20s infinite ;
+    
+}
+.choose-bubbles-img{
+    position: absolute;
+    left: -120px;
+    z-index: -1;
+    animation: shakeY 20s infinite ;
+    animation-delay: 0.9s;
+}
+
+.choose-lines-img{
+    position: absolute;
+    left: -100px;
+    z-index: -2;
+    animation: rotateOut 30s infinite;
+    opacity: 1 !important;
+    width: 120%;
+    height: inherit;
+}
+@keyframes rotateOut{
+    100%{
+        opacity: 1 !important;
+    }
+}
 .list li{
     list-style:none;
 }
