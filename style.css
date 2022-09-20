@@ -217,10 +217,14 @@ hr{
 }
 
 .list li::before{
-    content: "\f105";
+    content: "\f00c";
     font-family: "FontAwesome";
     margin-right: 1em;
-
+    background: var(--btn-gradient);
+    padding: 6px;
+    border-radius: 50%;
+    color: white;
+    text-shadow: 1px 1px 10px black;
 }
 /***** Section-05 *****/
 .card-img-left{
