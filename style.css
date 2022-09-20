@@ -167,10 +167,20 @@ hr{
 
 /***** Section-04 *****/
 
+
+
+@media  (max-width:992px) {
+    .choose-bubbles-img{
+        left: -80px !important;
+        top: 150px;
+        width: 80%;
+        height: inherit;
+    }
+}
+
+
 .image-wrapper{
     position: relative;
-    
-
 }
 
 .choose-brands-img{
