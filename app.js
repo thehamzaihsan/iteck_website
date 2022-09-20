@@ -14,7 +14,7 @@ $('.owl-one').owlCarousel({
         0: {
             items: 1,
             center:true,
-            margin:20,
+            margin:0,
             
         },
         770: {

@@ -74,17 +74,12 @@ body{
 }
 
 .btn-primary{
-    background: rgb(30,90,244);
     background: linear-gradient(90deg, rgba(30,90,244,1) 0%, rgba(0,96,248,1) 49%, rgba(53,177,252,1) 100%);
-    border: white;
-
-
+    border: rgba(255, 255, 255, 0);
 }
 
 .btn-primary:hover{
-    background: rgb(30,90,244);
-    background: linear-gradient(-90deg, rgba(30,90,244,1) 0%, rgba(0,96,248,1) 49%, rgba(53,177,252,1) 100%);
-
+    background: linear-gradient(-90deg, rgba(30,90,244,1) 0%, rgba(0,96,248,1) 49%, rgba(53,177,252,1) 100%);   
 }
 
 /***** Section-01 *****/
@@ -187,22 +182,23 @@ hr{
     position: absolute;
     left: -120px;
     z-index: -1;
-    animation: shakeY 20s infinite ;
+    animation: shakeY 20s infinite alternate;
     
 }
 .choose-bubbles-img{
     position: absolute;
     left: -120px;
     z-index: -1;
-    animation: shakeY 20s infinite ;
+    animation: shakeY 20s infinite alternate;
     animation-delay: 2s;
+
 }
 
 .choose-lines-img{
     position: absolute;
     left: -100px;
     z-index: -2;
-    animation: rotateOut 30s infinite;
+    animation: rotateOut 30s infinite alternate;
     opacity: 1 !important;
     width: 120%;
     height: inherit;
