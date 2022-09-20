@@ -83,3 +83,18 @@ $('.owl-carousel').find('.owl-dots').removeClass('disabled');
 $('.owl-carousel').on('changed.owl.carousel', function(event) {
 	$(this).find('.owl-dots').removeClass('disabled');
 });
+
+
+
+
+function Openpopup(){
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("loading-bg").style.display = "block";
+    document.getElementsByTagName('body')[0].style.overflowY = "hidden";
+}
+
+function Closepopup(){
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("loading-bg").style.display = "none";
+    document.getElementsByTagName('body')[0].style.overflowY = "visible";
+}

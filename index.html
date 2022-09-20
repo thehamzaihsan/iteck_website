@@ -28,7 +28,7 @@
 </head>
 
 
-<body>
+<body id="body">
     <div class="banner d-lg-block d-none text-white">
     <div class="container p-2 ">
         <div class="d-flex justify-content-between ps-3 pe-3 ">
@@ -84,7 +84,7 @@
                     <i class="gg-search"></i>
                 </div>
                  <div>
-                     <button class="btn btn-primary">Free quote</button>
+                     <button class="btn btn-primary" onclick="Openpopup()">Free quote</button>
                  </div>
             </div>
         </div>
@@ -103,12 +103,12 @@
                                 <br>
                                 <p class="text-black-50">We transform businesses of most major sectors with powerful and adaptable digital solutions that satisfy the needs of today.</p>
                                 <br>
-                                <button class=" button_1 btn btn-secondary p-3 w-lg-50 w-100  ">Our Services</button>
+                                <button class=" button_1 btn btn-secondary p-3 w-lg-50 w-100" onclick="Openpopup()">Our Services</button>
                             </div>
                         </div>
                         <div class="col-lg-6 p-lg-0 p-3">
                     
-                            <img src="./img/images/head.png" class="img-fluid p-2 m-1 mx-auto d-block" alt="header">
+                            <img src="./img/images/head.png" class="img-fluid p-2 m-1 mx-auto d-block " alt="header">
                         </div>
                     </div>
                 </div>
@@ -742,6 +742,33 @@
             <p class="text-white-50 text-center pt-lg-3 p-1">2022 Copyright by <a href="" class="text-white">Iteck.Co.</a> All Rights Reserved by <a href="" class="text-white">ThemesCamp</a></p>
         </div>
     </div>
+
+
+    <div class="loading-bg" id="loading-bg">
+    </div>
+   
+    <div class="popup" id="popup">
+        <button class="close-button" onclick="Closepopup()"><i class="fa-solid fa-xmark"></i></button>
+        <form >
+            <div class="form-group">
+                    <input type="text" class="form-control mt-2 mb-1 p-3 border-white" placeholder="Name" required>
+                    <input type="email" class="form-control mt-2 mb-1 p-3 border-white" placeholder="example@mail.com" required>
+            </div>
+            <div class="form-group">
+                <textarea  class="form-control mt-2 mb-1  p-3 border-white" cols="30" rows="7" placeholder="Message" required></textarea>
+            </div>
+            <div class="form-group mt-2 mb-1 ">
+                <div class="d-flex">
+                    <input class="form-check-input  " type="checkbox" value="" id="Check2" required>
+                    <label class="form-check-label ps-1" for="Check2"><p>By submitting, i'm agreed to the Terms & Conditons</p></label>
+                </div>
+            </div>
+
+            <div class="justify-content-center d-flex"><button  onsubmit="Closepopup()" type="submit" class="btn btn-secondary  m-1 p-3 border-0  w-50">Send Message</button></div>
+        </form>
+    
+    </div>
+
 </body>
 
 
