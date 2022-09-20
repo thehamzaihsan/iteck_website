@@ -46,6 +46,7 @@ body{
     color: white;
 }
 
+
 /***** Navbar *****/
 
 .call_icon{
@@ -131,7 +132,9 @@ hr{
     background-position: right TOP;
 }
 
-
+.card-title{
+    font-weight: 700;
+}
 .card-collection .card{
     border-radius: 10px;
 }
@@ -154,9 +157,12 @@ hr{
 
 }
 
+.card-title , .card{
+    transition: all 0.30s ease-in-out;
+}
 
 .card-collection .card:hover{
-    box-shadow: 0px 0px 20px rgb(171, 171, 171); 
+    box-shadow: 0px 0px 30px rgb(171, 171, 171); 
     
 }
 
