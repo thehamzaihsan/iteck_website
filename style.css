@@ -526,6 +526,12 @@ hr{
     display: none;
     opacity: 1 !important;   
 }
+
+@media (max-width:350px) {
+    .popup{
+        min-width: 330px;
+    }
+}
 .loading-bg{
     opacity: 0.5;
     background-color: white;
