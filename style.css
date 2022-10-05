@@ -9,7 +9,9 @@
     --btn-gradient:linear-gradient(90deg, rgba(6,95,250,1) 0%, rgba(2,181,255,1) 48%, rgba(3,19,254,1) 100%);
 }
   
-
+html{
+    scroll-behavior: smooth;
+}
 
 @media  (max-width:600px) {
 
@@ -555,4 +557,37 @@ hr{
 
 .close-button:active{
     background-color: rgb(255, 129, 129);
+}
+
+
+.thanks{
+    position: fixed;
+    align-self: center;
+    top:5%;
+    left: 50%;
+    transform: translate(-50% , -50%);;
+}
+
+
+.thanks-popup{
+    display: none;
+    opacity: 0;
+    size: 0%;
+    transition: all 10s ease-in-out;
+}
+
+
+ .animation-headshake{
+   animation: headShake 1s ease-in-out;
+   transition: border 0.5s ease-in-out;
+   border: rgba(250, 63, 63, 0.877) solid 2px !important;
+}
+
+.animation-headshake:not(:invalid){
+    transition: border 0.5s ease-in-out;
+    border: rgba(63, 250, 63, 0.877) solid 2px !important;
+}
+
+.form-wrapper:not(:hover) .submit-btn:not(.disabled){
+    animation: headShake 1s ease-in-out infinite;
 }

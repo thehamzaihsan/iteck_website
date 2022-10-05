@@ -84,7 +84,7 @@
                     <i class="gg-search"></i>
                 </div>
                  <div>
-                     <button class="btn btn-primary" onclick="Openpopup()">Free quote</button>
+                     <button class="btn btn-primary popupbutton" value="popup1" >Free quote</button>
                  </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
                                 <br>
                                 <p class="text-black-50">We transform businesses of most major sectors with powerful and adaptable digital solutions that satisfy the needs of today.</p>
                                 <br>
-                                <button class=" button_1 btn btn-secondary p-3 w-lg-50 w-100" onclick="Openpopup()">Our Services</button>
+                                <button class=" button_1 btn btn-secondary p-3 w-lg-50 w-100 popupbutton" value="popup1">Our Services</button>
                             </div>
                         </div>
                         <div class="col-lg-6 p-lg-0 p-3">
@@ -141,7 +141,8 @@
                         <br>
                         <p class=" opacity-75">Iteck Co is the partner of choice for many of the world's leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.
                         </p>
-                        <div class="d-flex justify-content-lg-between justify-content-center "><button class="btn btn-outline-light m-lg-5 m-2 ms-lg-0 p-3 align-center">More About Us</button></div>
+                        <div class="d-flex justify-content-lg-between justify-content-center ">
+                            <button class="popupbutton btn btn-outline-light m-lg-5 m-2 ms-lg-0 p-3 align-center"   value="popup2" >More About Us</button></div>
                     </div>
                 </div>
                 
@@ -355,7 +356,7 @@
                                 </div>
                         </div>
 
-             </div>
+                </div>
             </div>
 
         </div>
@@ -648,36 +649,36 @@
                         <br>
                         <a href="" class="text-white  text-center text-lg-start">Get Directions</a>
                     </div>
-                    <div class="col-lg-6 p-2">
-                        <form >
-                            <div class="form-group">
-                                <div class="d-flex justify-content-evenly">
-                                    <input type="text" class="form-control mt-1 mb-1 p-3 me-1 border-white" placeholder="Name" required>
-                                    <input type="email" class="form-control mt-1 mb-1 p-3 ms-1 border-white" placeholder="example@mail.com" required>
+                    <div class="col-lg-6 ">
+                        <div class="form-wrapper p-2">
+                            <form name="contact-form" >
+                                <div class="form-group">
+                                    <div class="d-flex justify-content-evenly">
+                                        <input type="text" class="form-control mt-1 mb-1 p-3 me-1 border-white form-name" placeholder="Name" name="name" required>
+                                        <input type="email" class="form-control mt-1 mb-1 p-3 ms-1 border-white form-email " placeholder="example@mail.com" name="password" required>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="form-group">
-                                <select class="form-control mt-1 mb-1  p-3 border-white" required>
-                                    <option>Your inquiry about</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <textarea  class="form-control mt-2 mb-1  p-3 border-white" cols="30" rows="7" placeholder="Message" required></textarea>
-                            </div>
-                            <div class="form-group mt-2 mb-1 ">
-                                <div class="d-flex">
-                                    <input class="form-check-input  " type="checkbox" value="" id="Check1" required>
-                                    <label class="form-check-label ps-1" for="Check1"><p>By submitting, i'm agreed to the Terms & Conditons</p></label>
+                                <div class="form-group">
+                                    <select class="form-control mt-1 mb-1  p-3 border-white " name="dropdown" required>
+                                        <option value="">Your inquiry about</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
                                 </div>
-                            </div>
-
-                            <button type="submit" class="btn btn-secondary  m-1 p-3 border-0 ">Send Message</button>
-                        </form>
+                                <div class="form-group">
+                                    <textarea  class="form-control mt-2 mb-1  p-3 border-white " cols="30" rows="7" placeholder="Message" id="inputarea" name="inputarea" required></textarea>
+                                    <p class="text-white " id="wordcount" ></p>
+                                </div>
+                                <div class="form-group mt-2 mb-1 ">
+                                    <div class="d-flex">
+                                        <input class="form-check-input  " type="checkbox" value="" id="Check1"  name="check" required >
+                                        <label class="form-check-label ps-1 form-tick " for="Check1" >By submitting, i'm agreed to the Terms & Conditons</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-secondary ms-0 m-3 p-3 border-0  submit-btn  disabled " >Send Message</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -747,9 +748,9 @@
     <div class="loading-bg" id="loading-bg">
     </div>
    
-    <div class="popup" id="popup">
-        <button class="close-button" onclick="Closepopup()"><i class="fa-solid fa-xmark"></i></button>
-        <form >
+    <div class="popup" id="popup1">
+        <button class="close-button close-popupbutton" value="popup1"><i class="fa-solid fa-xmark"></i></button>
+        <form onsubmit="return Closepopup('popup1')"   name="form" method="post">
             <div class="form-group">
                     <input type="text" class="form-control mt-2 mb-1 p-3 border-white" placeholder="Name" required>
                     <input type="email" class="form-control mt-2 mb-1 p-3 border-white" placeholder="example@mail.com" required>
@@ -764,14 +765,112 @@
                 </div>
             </div>
 
-            <div class="justify-content-center d-flex"><button  onsubmit="Closepopup()" type="submit" class="btn btn-secondary  m-1 p-3 border-0  w-50">Send Message</button></div>
+            <div class="justify-content-center d-flex"><button  name="submit"  value="popup3" type="submit" class="btn btn-secondary  m-1 p-3 border-0  w-50 popupbutton">Send Message</button></div>
         </form>
     
     </div>
 
+    <div class="popup bg-info m-1 p-3 text-white" id="popup2">
+        <button class="close-button close-popupbutton " value="popup2"><i class="fa-solid fa-xmark"></i></button>
+        Iteck Co is the partner of choice for many of the world's leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.
+    </div>
+
+    <div id="popup3" class="thanks-popup">
+        <div class=" thanks bg-info m-1  text-center w-25 text-black d-flex flex-row justify-content-between bg-opacity-75" >
+                <div class="p-3" id="thanks-popup-text">Thanks for contacting</div>
+                <button class="close-popupbutton border-0 bg-info p-3 ps-4 pe-4" value="popup3">
+                    <div><i class="fa-solid fa-xmark"></i></div>
+                </button>
+        </div>
+    </div>
+    
+    <script>
+    $('.owl-one').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: false,
+        dots: true,
+        center:false,
+        stagePadding: 10,
+        responsiveBaseElement: 'body',
+        animateOut: 'fadeOut',
+        nav:true,
+        responsive: {
+            0: {
+                items: 1,
+                center:true,
+                margin:30,
+                
+            },
+            770: {
+                items: 2,
+                
+            },
+            1000: {
+                items: 3,
+    
+            }
+        }
+    })
+    $(document).keydown( function(eventObject) {
+    if(eventObject.which==37) {//left arrow
+             $('.owl-prev').click();//emulates click on prev button
+    } 
+    else if(eventObject.which==39) {//right arrow
+             $('.owl-next').click();//emulates click on next button
+         }
+    } );
+    
+    
+    
+    $('.owl-two').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: false,
+        dots: false,
+        center:false,
+        stagePadding: 10,
+        responsiveBaseElement: 'body',
+        animateOut: 'fadeOut',
+        nav:true,
+        responsive: {
+            0: {
+                items: 1,
+                center:true,
+                margin:20,
+            },
+            770: {
+                items: 2,
+                
+            },
+            1200: {
+                items: 3
+            }
+        }
+    })
+    $(document).keydown( function(eventObject) {
+    if(eventObject.which==37) {//left arrow
+             $('.owl-prev').click();//emulates click on prev button
+    } 
+    else if(eventObject.which==39) {//right arrow
+             $('.owl-next').click();//emulates click on next button
+         }
+    } );
+    
+    $('.owl-carousel').find('.owl-nav').removeClass('disabled');
+    $('.owl-carousel').on('changed.owl.carousel', function(event) {
+        $(this).find('.owl-nav').removeClass('disabled');
+    });
+    
+    $('.owl-carousel').find('.owl-dots').removeClass('disabled');
+    $('.owl-carousel').on('changed.owl.carousel', function(event) {
+        $(this).find('.owl-dots').removeClass('disabled');
+    });
+    </script>
+
 </body>
-
-
-
-
 </html>
